@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="index.html" class="logo">SwiftShop</a>
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <a href="#" id="close">X</a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html">Cart</a>
+      <span id="bar">☰</span>
+    </div>
+  </section>
+
+  <section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>Save more with coupons & up to 70% off!</p>
+    <button class="btn" onclick="window.location.href='shop.html'">Shop Now</button>
+  </section>
+
+  <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Summer Collection New Modern Cards Layout</p>
+    <div id="featured-products-container" class="pro-container"></div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col main-brand-col">
+      <a href="index.html" class="logo">SwiftShop</a>
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Mumbai</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Hours:</strong> 10:00 AM - 08:00 PM, Mon - Sat</p>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#0">Delivery Information</a>
+      <a href="#0">Privacy Policy</a>
+      <a href="#0">Terms & Conditions</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="cart.html">View Cart</a>
+      <a href="shop.html">Track My Order</a>
+      <a href="contact.html">Help & Support</a>
+    </div>
+
+    <div class="col payment-col">
+      <h4>Secured Payment Gateways</h4>
+      <p>Supported checkouts:</p>
+      <div class="gateways">
+        <span class="pay-badge">Visa</span>
+        <span class="pay-badge">Mastercard</span>
+        <span class="pay-badge">UPI</span>
+        <span class="pay-badge">RuPay</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

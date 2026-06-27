@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - SwiftShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="header">
+    <a href="index.html" class="logo">SwiftShop</a>
+    <ul id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="cart.html">Cart</a></li>
+      <a href="#" id="close">X</a>
+    </ul>
+    <div id="mobile"><a href="cart.html">Cart</a><span id="bar">☰</span></div>
+  </section>
+
+  <section id="cart" class="section-p1">
+    <table>
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
+      <tbody id="cart-table-body">
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-bottom" class="section-p1">
+    <div id="subtotal">
+      <h3>Cart Totals</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td id="cart-total">$0.00</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+      </table>
+      <button class="btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - SwiftShop</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Extra small page-specific styling for About Features */
+    .about-fe-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    .fe-item {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 25px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    }
+
+    .fe-item h3 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="index.html" class="logo">SwiftShop</a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <a href="#" id="close">X</a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html" style="text-decoration: none; color: #1a1a1a; font-weight: 600; margin-right: 10px;">Cart</a>
+      <span id="bar">☰</span>
+    </div>
+  </section>
+
+  <section class="blog-header"
+    style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200');">
+    <h2 style="color: #fff;">#KnowUs</h2>
+    <p style="color: #eee;">Learn more about our core values, mission, and dedicated team</p>
+  </section>
+
+  <section id="about-head" class="section-p1">
+    <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?q=80&w=600" alt="Our Team Workspace">
+    <div>
+      <h2 style="text-align: left; margin-bottom: 15px;">Who We Are?</h2>
+      <p style="text-align: left; line-height: 26px; font-size: 15px;">
+        SwiftShop is an innovative e-commerce application platform delivering top-tier global tech accessories and
+        lifestyle essentials directly to your doorstep. Founded with a vision to merge clean aesthetics with practical
+        design, we carefully select items that optimize your daily routine and workflow.
+      </p>
+      <p style="text-align: left; line-height: 26px; font-size: 15px;">
+        Our commitment revolves around quality product sourcing, transparent customer care, and quick response support
+        metrics. Whether you're upgrading your hybrid remote workspace or expanding your minimalist style guides, we
+        offer curated premium choices tailored for modern professionals.
+      </p>
+
+      <div class="about-fe-box">
+        <div class="fe-item">
+          <h3>Premium Quality</h3>
+          <p style="font-size: 14px; margin:0;">Handpicked verified tech and apparel gear.</p>
+        </div>
+        <div class="fe-item">
+          <h3>Free Shipping</h3>
+          <p style="font-size: 14px; margin:0;">Fast local routing and logistics dispatch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col main-brand-col">
+      <a href="index.html" class="logo">SwiftShop</a>
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Mumbai</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#0">Delivery Information</a>
+      <a href="#0">Privacy Policy</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="cart.html">View Cart</a>
+      <a href="shop.html">Track My Order</a>
+    </div>
+    <div class="col payment-col">
+      <h4>Secured Payment Gateways</h4>
+      <div class="gateways">
+        <span class="pay-badge">Visa</span>
+        <span class="pay-badge">Mastercard</span>
+        <span class="pay-badge">UPI</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
