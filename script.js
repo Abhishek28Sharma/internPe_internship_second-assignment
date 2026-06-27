@@ -150,10 +150,8 @@ const products = [
   },
 ]
 
-// Initialize Cart Array from LocalStorage
 let cart = JSON.parse(localStorage.getItem('ecommerce_cart')) || []
 
-// Render 10 Card Layout inside Containers dynamically
 function renderProductGrid(containerId) {
   const container = document.getElementById(containerId)
   if (!container) return
@@ -176,7 +174,6 @@ function renderProductGrid(containerId) {
   })
 }
 
-// Add Item to State and Persistent Storage
 function addToCart(id) {
   const product = products.find((p) => p.id === id)
   const existingItem = cart.find((item) => item.id === id)
@@ -192,7 +189,6 @@ function addToCart(id) {
   if (document.getElementById('cart-table-body')) renderCartView()
 }
 
-// Render Cart view layout logic
 function renderCartView() {
   const tbody = document.getElementById('cart-table-body')
   const totalElement = document.getElementById('cart-total')
@@ -226,7 +222,6 @@ function renderCartView() {
   if (totalElement) totalElement.innerText = `$${grandTotal}`
 }
 
-// Update quantities directly from tabular form inputs
 function updateQuantity(index, val) {
   if (val < 1) val = 1
   cart[index].quantity = parseInt(val)
@@ -234,14 +229,12 @@ function updateQuantity(index, val) {
   renderCartView()
 }
 
-// Remove item index splice handler
 function removeFromCart(index) {
   cart.splice(index, 1)
   localStorage.setItem('ecommerce_cart', JSON.stringify(cart))
   renderCartView()
 }
 
-// Checkout Form Submission Event Handler
 function checkout() {
   if (cart.length === 0) {
     alert('Your cart is empty! Add products before checking out.')
@@ -252,20 +245,16 @@ function checkout() {
   localStorage.removeItem('ecommerce_cart')
   renderCartView()
 }
-// Dynamic Single Product Page Loader
+
 function loadProductDetails() {
-  // Check if we are currently on the single product page container
   const detailsContainer = document.getElementById('prodetails')
   if (!detailsContainer) return
 
-  // Extract the "id" parameter from the URL address bar
   const urlParams = new URLSearchParams(window.location.search)
   const productId = parseInt(urlParams.get('id'))
 
-  // Find the product matching that ID, default to product 1 if missing or invalid
   const product = products.find((p) => p.id === productId) || products[0]
 
-  // Dynamically overwrite the inner HTML structure with the target product data
   detailsContainer.innerHTML = `
         <div class="single-pro-image">
             <img src="${product.img}" width="100%" id="MainImg" alt="${product.name}">
@@ -289,7 +278,6 @@ function loadProductDetails() {
     `
 }
 
-// Custom handler for the detail page "Add to Cart" button to capture quantities
 function addDetailedItemToCart(id) {
   const qtyInput = document.getElementById('product-quantity')
   const quantity = qtyInput ? parseInt(qtyInput.value) : 1
@@ -307,16 +295,13 @@ function addDetailedItemToCart(id) {
   alert(`${quantity}x ${product.name} added to your cart!`)
 }
 
-// Make sure our loader function triggers when the DOM lifecycle mounts
 document.addEventListener('DOMContentLoaded', () => {
-  // Keep your existing grid renders running
   renderProductGrid('featured-products-container')
   renderCartView()
-  // Run the details inspector hook
+
   loadProductDetails()
 })
 
-// Dynamic Single Product Page Loader
 function loadProductDetails() {
   const detailsContainer = document.getElementById('prodetails')
   if (!detailsContainer) return
@@ -325,7 +310,6 @@ function loadProductDetails() {
   const productId = parseInt(urlParams.get('id'))
   const product = products.find((p) => p.id === productId) || products[0]
 
-  // Re-rendering clean structure using updated modular classes
   detailsContainer.innerHTML = `
         <div class="single-pro-image">
             <img src="${product.img}" width="100%" id="MainImg" alt="${product.name}">
@@ -354,7 +338,6 @@ function loadProductDetails() {
     `
 }
 
-// Boot application dependencies on document lifecycle ready
 document.addEventListener('DOMContentLoaded', () => {
   renderProductGrid('featured-products-container')
   renderCartView()

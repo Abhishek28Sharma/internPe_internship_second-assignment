@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Global Variables & Reset Rules
-   ========================================================================== */
+/* Global Variables & Reset Rules */
 :root {
   --primary-color: #088178;
   --text-color: #222;
@@ -61,9 +59,7 @@ p {
   padding: 40px 80px;
 }
 
-/* ==========================================================================
-   Interactive Navigation Header Layout
-   ========================================================================== */
+/* Interactive Navigation Header Layout */
 #header {
   display: flex;
   align-items: center;
@@ -117,9 +113,7 @@ p {
   display: none;
 }
 
-/* ==========================================================================
-   Home Page Hero Banner Layout
-   ========================================================================== */
+/*Home Page Hero Banner Layout */
 #hero {
   background: linear-gradient(135deg, #e3e6f3 0%, #cce7d0 100%);
   height: 70vh;
@@ -155,9 +149,7 @@ p {
   font-size: 18px;
 }
 
-/* ==========================================================================
-   E-Commerce Product Display Cards Grid
-   ========================================================================== */
+/* E-Commerce Product Display Cards Grid */
 .pro-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -248,9 +240,7 @@ p {
   color: var(--white);
 }
 
-/* ==========================================================================
-   Single Product Detailed View Layout
-   ========================================================================== */
+/* Single Product Detailed View Layout */
 #prodetails {
   display: flex;
   justify-content: space-between;
@@ -348,9 +338,7 @@ p {
   text-align: left;
 }
 
-/* ==========================================================================
-   Shopping Cart Panel Layout
-   ========================================================================== */
+/* Shopping Cart Panel Layout */
 #cart {
   overflow-x: auto;
 }
@@ -417,9 +405,7 @@ p {
   font-size: 16px;
 }
 
-/* ==========================================================================
-   Premium Blog Page Architecture System
-   ========================================================================== */
+/* Premium Blog Page Architecture System */
 .blog-header {
   background:
     linear-gradient(rgba(8, 129, 120, 0.05), rgba(227, 230, 243, 0.4)),
@@ -594,9 +580,7 @@ p {
   margin-bottom: 15px;
 }
 
-/* ==========================================================================
-   Professional Global Footer Layout Setups
-   ========================================================================== */
+/* Professional Global Footer Layout Setups */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -656,9 +640,7 @@ footer a:hover {
   text-transform: uppercase;
 }
 
-/* ==========================================================================
-   Global Mobile & Tablet Media Query Breakpoints
-   ========================================================================== */
+/* Global Mobile & Tablet Media Query Breakpoints */
 @media (max-width: 991px) {
   #blog-container {
     flex-direction: column;
@@ -756,9 +738,7 @@ footer a:hover {
   }
 }
 
-/* ==========================================================================
-   About Page Enhancements
-   ========================================================================== */
+/* About Page Enhancements */
 #about-head {
   display: flex;
   align-items: center;
@@ -806,9 +786,7 @@ footer a:hover {
   margin-bottom: 8px;
 }
 
-/* ==========================================================================
-   Contact Page Form & Info Panel
-   ========================================================================== */
+/* Contact Page Form & Info Panel*/
 .contact-form-box {
   display: flex;
   justify-content: space-between;
@@ -865,9 +843,7 @@ footer a:hover {
   font-weight: 600;
 }
 
-/* ==========================================================================
-   About & Contact Mobile Responsiveness Overrides
-   ========================================================================== */
+/* About & Contact Mobile Responsiveness Overrides */
 @media (max-width: 799px) {
   #about-head {
     flex-direction: column;
